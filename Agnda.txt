@@ -7,3 +7,37 @@ Agenda
 
 
 2:Src folder and build the package
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+For commit code
+
+git status
+git add .
+git commit -m "any"
+git push -u origin main       -main is branch it will decide
