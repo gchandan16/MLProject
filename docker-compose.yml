@@ -1,13 +1,15 @@
-version: "3.9"
+version: '3.9'
 
 services:
   web:
-    build: .
-    container_name: ml-flask-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flask_app
     ports:
-      - "5000:5000"
+      - "5000:5000"      # Map local port 5000 to container port 5000
     environment:
-      - FLASK_ENV=development
+      FLASK_ENV: development
     volumes:
-      - .:/app
-    command: python app.py
+      - .:/app           # Mount current directory to /app in container
+    command: python app.py  # Change if your main Flask file has a different name
