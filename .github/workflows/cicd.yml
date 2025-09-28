@@ -27,6 +27,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./Dockerfile
+          file: ./DockerFile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ml-flask-app:latest
